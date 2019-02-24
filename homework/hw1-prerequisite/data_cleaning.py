@@ -1,3 +1,6 @@
+import os
+import numpy as np
+import pandas as pd
 
 def data_summary(database_dir, summary_path):
     """To summarize database information.
@@ -17,7 +20,26 @@ def data_summary(database_dir, summary_path):
         summary_path (str): Path to save the summary dataframe.
             Dataframe will save in csv format.
     """
-    pass
+    raw_data = []
+    for root, dirs, files in os.walk(database_dir):
+        if root[-2:] == 'CT' or root[-2:] == 'MR':
+            folder_root = root.replace(database_dir, '')
+            raw_data.append(folder_root[1:].split('/'))
+            
+    df = pd.DataFrame(columns=['PatientID', 'CaseDate', 'CaseTime', 'Modality'])
+    for i, data in enumerate(raw_data):
+        df.loc[i] = [data[0].split('-')[1],
+                     "/".join(data[1][4:14].split('.')), 
+                     ":".join(data[1][15:].split('.')), 
+                     data[2]]
+    df = df.sort_values(by=['PatientID', 'CaseDate', 'CaseTime', 'Modality'])
+    filename = summary_path + "summary.csv"
+    
+    # output to summary.csv 
+    df.to_csv(filename, index = False)
+    
+    return df
+#     pass
 
 
 def get_target_cases_df(summary_df):

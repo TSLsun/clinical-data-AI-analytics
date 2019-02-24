@@ -70,6 +70,7 @@ Temporary Items
 
 
 ## ignore 
+.ipynb_checkpoints
 *.zip
 *.docx
 makefile
