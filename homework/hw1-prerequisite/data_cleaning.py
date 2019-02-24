@@ -33,13 +33,13 @@ def data_summary(database_dir, summary_path):
                      ":".join(data[1][15:].split('.')), 
                      data[2]]
     df = df.sort_values(by=['PatientID', 'CaseDate', 'CaseTime', 'Modality'])
-    filename = summary_path + "summary.csv"
+    df = df.reset_index(drop=True)
     
     # output to summary.csv 
+    filename = summary_path + "summary.csv"
     df.to_csv(filename, index = False)
     
     return df
-#     pass
 
 
 def get_target_cases_df(summary_df):
@@ -58,4 +58,14 @@ def get_target_cases_df(summary_df):
         target_cases_df (pandas.core.frame.DataFrame):
             Target cases dataframe. Index should be successive.
     """
-    pass
+    
+    # keep only CT
+    df = summary_df[summary_df.Modality == 'CT']
+    
+    # keep the latest case per patient
+    df = df.drop_duplicates(subset='PatientID', keep="last")
+
+    # reset the index
+    df = df.reset_index(drop=True)
+    
+    return df
