@@ -35,6 +35,3 @@ def AIMIANet(input_shape=[96, 96, 96, 1], num_classes=2):
 
     
     return model
-
-model = AIMIANet()
-model.summary(line_length=105)
