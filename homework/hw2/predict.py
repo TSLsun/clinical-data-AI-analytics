@@ -110,7 +110,7 @@ def main(args):
             label_str = _pair[1]
             f.write(encode + ',' + label_str + '\n')
 
-    logging.info("done prediction... save to" + args.predict_csv_dir)
+    logging.info("Done prediction... save to " + args.predict_csv_dir)
 
 def _parse_args():
     parser = argparse.ArgumentParser(
