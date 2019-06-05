@@ -1,0 +1,36 @@
+
+============================ Messages from Goddess ============================
+ * Job starting from: 三 6月 5 19:45:27 CST 2019
+ * Job ID           : 8523
+ * Job name         : clinicAI
+ * Job partition    : g-wings
+ * Nodes            : 1
+ * Cores            : 8
+ * Working directory: ~/projects/clinicAI/HW3/submit_files
+===============================================================================
+
+4zqmljfrc675dtrky3gchyx87jkl3czk 306.52673
+t6if2ohjnd7mh06z81wwd3sp86h427ad 216.95746
+7rmkmfclt0mkmqs5b3e6rny5hwgwo11y 277.552
+chjxxykw2lz1v37hgriyniblgi41d5y3 246.24332
+orhcxlyoc0x6idbzlqmbsdqduehdy75o 453.78464
+7rxxiwwbbxy0yoatpsyltln3v2wtne9e 371.91684
+0r3e6ezursuo5y6m3jwpztq763cjki0p 447.60593
+haz4ax59boce4twwwpzfq7hwydgqn9we 369.43204
+zcn7u2kqbrqlzgf07yzzjg5mqyqgqul1 254.7535
+27w6sraww3g2ui9fxpu08tcgyocprtqg 236.62231
+sedxnmxte7gxrdbbpx8p8b3jhurlrx3n 274.28317
+ji97woc3vcyn9lzq5xfpk3j95i5vswmm 359.2736
+09amv752acxnzvkfughexk0wilhxdtd5 308.43512
+gg4o6f2xyb2zpclttmjy35lqnasg9vz4 498.97937
+hjhau2e5j5p1zpwbbuocjiwplq20l2dz 326.99017
+2398n5c5yz5km503of24gbxdb803gq5q 400.0035
+do2ausaft9rrqogh8y16qb0vuy5roywm 377.81714
+tspn2x2dggh1ugi1vizmvcrsll644p2a 391.69998
+djquj44l7imhygd741v81p9gfc4nu5xk 339.96884
+jbhvvv6rpu7mbs5bpu1byb31c9yzo9db 328.36066
+
+============================ Messages from Goddess ============================
+ * Job ended at     : 三 6月 5 19:46:29 CST 2019
+===============================================================================
+
